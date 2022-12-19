@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import Links from './components/Links';
 import Logo from './components/Logo';
 import Pagination from './components/Pagination';
+import About from './components/About';
 
 function App() {
   const [page, setPage] = useState(0);
@@ -25,7 +26,7 @@ function App() {
         className='absolute top-1/2 -translate-y-1/2 left-44 w-5/6 h-[550px] overflow-y-scroll scrollbar-hide snap-y snap-mandatory'
       >
         <Intro id='intro' />
-        <Intro id='about' />
+        <About id='about' />
         <Intro id='skills' />
         <Intro id='work' />
       </div>
