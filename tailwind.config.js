@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'noise': 'url(../public/noise.svg);'
+        'noise': 'url(../public/noise.svg);',
+        'drone': 'url(../public/drone.jpg);'
       },
       fontFamily: {
         'montserrat': 'Montserrat'

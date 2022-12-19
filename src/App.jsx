@@ -4,6 +4,7 @@ import Links from './components/Links';
 import Logo from './components/Logo';
 import Pagination from './components/Pagination';
 import About from './components/About';
+import Work from './components/Work';
 
 function App() {
   const [page, setPage] = useState(0);
@@ -28,7 +29,11 @@ function App() {
         <Intro id='intro' />
         <About id='about' />
         <Intro id='skills' />
-        <Intro id='work' />
+        <Work id='work'>
+          <Work.Item src='drone.jpg' title='UAV-Based Crowd Surveillance System In Post COVID-19 Era' order={1} />
+          <Work.Item src='face-mask.jpg' title='Real-time Face Mask Detection' order={2} />
+          <Work.Item src='music.jpg' title='Spotify playlist recommendation system' order={3}/>
+        </Work>
       </div>
       <Pagination page={page}/>
     </div>
