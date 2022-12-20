@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      'md': '1280px',
+      'lg': '1920px',
+    },
     extend: {
       backgroundImage: {
         'noise': 'url(../public/noise.svg);',

@@ -26,7 +26,7 @@ function App() {
       <Links />
       <div
         id='container'
-        className='absolute top-1/2 -translate-y-1/2 left-44 w-5/6 h-[550px] overflow-y-scroll scrollbar-hide snap-y snap-mandatory'
+        className='absolute top-1/2 -translate-y-1/2 md:left-24 lg:left-44 w-5/6 h-[550px] overflow-y-scroll scrollbar-hide snap-y snap-mandatory'
       >
         <Intro id='intro' />
         <About id='about' />
