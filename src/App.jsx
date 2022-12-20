@@ -5,6 +5,7 @@ import Logo from './components/Logo';
 import Pagination from './components/Pagination';
 import About from './components/About';
 import Work from './components/Work';
+import Scroll from './components/Scroll';
 
 function App() {
   const [page, setPage] = useState(0);
@@ -36,6 +37,7 @@ function App() {
         </Work>
       </div>
       <Pagination page={page}/>
+      <Scroll faceDown={page !== 3} />
     </div>
   );
 }

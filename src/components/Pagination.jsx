@@ -9,11 +9,11 @@ export default function Pagination({ page }) {
       </span>
       <div className='h-full w-[2px] bg-white/30'>
         <div className={`duration-300 w-full h-1/4 bg-white ${
-          page ==  0 ? 
+          page ===  0 ? 
           'translate-y-0':
-          (page == 1 ? 
+          (page === 1 ? 
           'translate-y-full':
-          (page == 2 ?
+          (page === 2 ?
           'translate-y-[200%]':
           'translate-y-[300%]'))
           }`} />

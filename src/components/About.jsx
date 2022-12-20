@@ -1,5 +1,5 @@
 import React from 'react';
-import { DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline'
 export default function About({ id }) {
   return (
     <div id={id} className='w-full h-full flex flex-col justify-center pl-12 snap-center'>
