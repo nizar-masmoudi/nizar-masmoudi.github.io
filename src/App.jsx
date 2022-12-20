@@ -6,6 +6,7 @@ import Pagination from './components/Pagination';
 import About from './components/About';
 import Work from './components/Work';
 import Scroll from './components/Scroll';
+import Timeline from './components/Timeline';
 
 function App() {
   const [page, setPage] = useState(0);
@@ -29,7 +30,12 @@ function App() {
       >
         <Intro id='intro' />
         <About id='about' />
-        <Intro id='skills' />
+        <Timeline id='story'>
+          <Timeline.Marker estab='Faculty of Science' role="Bachelor's Diploma" major='Mathematics & Physics' date='2016 - 2018' />
+          <Timeline.Marker estab='ESPRIT School of Engineering' role="Engineering Diploma" major='Software (Minor in Data Science)' date='2018 - 2021' />
+          <Timeline.Marker estab='Swiss Premium Negoce' role="Software Engineer" major='Full-time' date='2021 - 2022' />
+          <Timeline.Marker estab='Université Paris Dauphine-PSL' role="Master's Diploma" major='Big Data & AI' date='2022 - 2023' />
+        </Timeline>
         <Work id='work'>
           <Work.Item src='drone.jpg' title='UAV-Based Crowd Surveillance System In Post COVID-19 Era' order={1} />
           <Work.Item src='face-mask.jpg' title='Real-time Face Mask Detection' order={2} />
