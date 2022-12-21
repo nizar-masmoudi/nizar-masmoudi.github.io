@@ -18,14 +18,14 @@ function Work({ id, children }) {
       className='flex flex-col items-center justify-center w-full h-full snap-center'
     >
       <span className='relative w-full h-24 md:mb-20 lg:mb-24'>
-        <h1 className='absolute md:bottom-2 lg:bottom-4 left-1/2 -translate-x-1/2 text-center font-medium md:text-4xl lg:text-5xl'>
+        <h1 className='absolute bottom-2 md:bottom-2 lg:bottom-4 left-1/2 -translate-x-1/2 text-center font-medium text-3xl md:text-4xl lg:text-5xl'>
           portoflio
         </h1>
-        <h1 className='absolute bottom-0 left-1/2 -translate-x-1/2 text-center font-bold md:text-7xl lg:text-8xl text-white/5'>
+        <h1 className='absolute bottom-0 left-1/2 -translate-x-1/2 text-center font-bold text-7xl md:text-7xl lg:text-8xl text-white/5'>
           PORTFOLIO
         </h1>
       </span>
-      <span className='flex flex-col items-center justify-center w-full md:space-y-5 lg:space-y-8'>
+      <span className='hidden md:flex flex-col items-center justify-center w-full md:space-y-5 lg:space-y-8'>
         {children}
       </span>
     </div>

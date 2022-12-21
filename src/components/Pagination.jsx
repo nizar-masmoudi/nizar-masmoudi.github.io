@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pagination({ page }) {
   return (
-    <span className='absolute right-12 top-1/2 h-1/4 -translate-y-1/2 flex items-center'>
+    <span className='hidden absolute right-12 top-1/2 h-1/4 -translate-y-1/2 md:flex items-center'>
       <span className='flex flex-col items-center justify-between h-full mr-4 md:text-sm lg:text-base'>
         <p>01</p>
         <p>04</p>

@@ -14,15 +14,15 @@ const Marker = ({ date, estab, role, major }) => (
 function Timeline({ children }) {
   return (
     <div className='flex flex-col items-center justify-center w-full h-full snap-center'>
-      <span className='relative w-full h-24 mb-12'>
-        <h1 className='absolute md:bottom-2 lg:bottom-4 left-1/2 -translate-x-1/2 text-center font-medium md:text-4xl lg:text-5xl'>
+      <span className='relative w-full h-24 mb-6 md:mb-12'>
+        <h1 className='absolute bottom-1/2 -translate-y-1/2 md:bottom-2 lg:bottom-4 left-1/2 -translate-x-1/2 text-center font-medium text-3xl md:text-4xl lg:text-5xl'>
           my story
         </h1>
-        <h1 className='absolute bottom-0 left-1/2 -translate-x-1/2 text-center font-bold md:text-7xl lg:text-8xl text-white/5'>
+        <h1 className='absolute bottom-0 left-1/2 -translate-x-1/2 text-center font-bold text-7xl md:text-7xl lg:text-8xl text-white/5'>
           MY STORY
         </h1>
       </span>
-      <span className='flex w-full h-2/3 items-center justify-center md:text-xs lg:text-base'>
+      <span className='hidden md:flex w-full h-2/3 items-center justify-center md:text-xs lg:text-base'>
         {React.Children.map(children, child => (
           <span className='group flex items-center'>
             {React.cloneElement(child)}
